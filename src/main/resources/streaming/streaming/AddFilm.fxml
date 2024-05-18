@@ -2,7 +2,6 @@
 
 <?import java.lang.*?>
 <?import java.net.*?>
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -20,54 +19,53 @@
                     <children>
                         <ScrollPane id="bodyLogin" fitToHeight="true" fitToWidth="true">
                             <content>
-                                <VBox id="loginContent" alignment="CENTER" style="-fx-background-color: white;">
-                                    <children>
-                              <Button mnemonicParsing="false" text="ajouter" />
-                              <Pane>
-                                 <children>
-                                               <TextField fx:id="emailField" layoutX="22.0" layoutY="14.0" minHeight="50.0" prefHeight="50.0" prefWidth="360.0" promptText="Nom">
-                                                   <styleClass>
-                                                       <String fx:value="lead-contact" />
-                                                       <String fx:value="action-clear" />
-                                                       <String fx:value="input-large" />
-                                                   </styleClass>
-                                               </TextField>
-                                               <TextField fx:id="ribField" accessibleRole="DATE_PICKER" layoutX="25.0" layoutY="73.0" minHeight="50.0" prefHeight="50.0" prefWidth="359.0" promptText="Description">
-                                                   <styleClass>
-                                                       <String fx:value="lead-contact" />
-                                                       <String fx:value="action-clear" />
-                                                       <String fx:value="input-large" />
-                                                   </styleClass>
-                                               </TextField>
-                                               <TextField fx:id="passwordField" layoutX="24.0" layoutY="129.0" minHeight="50.0" prefHeight="50.0" prefWidth="362.0" promptText="Age min">
-                                                   <styleClass>
-                                                       <String fx:value="lead-contact" />
-                                                       <String fx:value="action-clear" />
-                                                       <String fx:value="input-large" />
-                                                   </styleClass>
-                                               </TextField>
-                                               <DatePicker fx:id="birthDateField" editable="false" layoutX="203.0" layoutY="191.0" prefHeight="44.0" prefWidth="185.0" promptText="Duree" showWeekNumbers="true" />
-                                    <TextField fx:id="emailField1" layoutX="14.0" layoutY="188.0" minHeight="50.0" prefHeight="50.0" prefWidth="160.0" promptText="Anne sortie">
-                                       <styleClass>
-                                          <String fx:value="lead-contact" />
-                                          <String fx:value="action-clear" />
-                                          <String fx:value="input-large" />
-                                       </styleClass>
-                                    </TextField>
-                                 </children>
-                              </Pane>
-                              <TextField fx:id="passwordField1" minHeight="50.0" prefHeight="154.0" prefWidth="878.0" promptText="Bande Anonce">
+                        <Pane>
+                           <children>
+                              <Button fx:id="submitBtn" layoutX="368.0" layoutY="463.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="109.0" text="Ajouter" />
+                                         <TextField fx:id="nom" layoutX="120.0" layoutY="70.0" minHeight="50.0" prefHeight="50.0" prefWidth="360.0" promptText="Nom">
+                                             <styleClass>
+                                                 <String fx:value="lead-contact" />
+                                                 <String fx:value="action-clear" />
+                                                 <String fx:value="input-large" />
+                                             </styleClass>
+                                         </TextField>
+                                         <TextField fx:id="description" accessibleRole="DATE_PICKER" layoutX="118.0" layoutY="131.60000610351562" minHeight="50.0" prefHeight="50.0" prefWidth="359.0" promptText="Description">
+                                             <styleClass>
+                                                 <String fx:value="lead-contact" />
+                                                 <String fx:value="action-clear" />
+                                                 <String fx:value="input-large" />
+                                             </styleClass>
+                                         </TextField>
+                                         <TextField fx:id="ageMin" layoutX="118.0" layoutY="193.0" minHeight="50.0" prefHeight="50.0" prefWidth="362.0" promptText="Age min">
+                                             <styleClass>
+                                                 <String fx:value="lead-contact" />
+                                                 <String fx:value="action-clear" />
+                                                 <String fx:value="input-large" />
+                                             </styleClass>
+                                         </TextField>
+                              <TextField fx:id="aneeSortie" layoutX="118.0" layoutY="250.0" minHeight="50.0" prefHeight="50.0" prefWidth="360.0" promptText="Anne sortie">
                                  <styleClass>
                                     <String fx:value="lead-contact" />
                                     <String fx:value="action-clear" />
                                     <String fx:value="input-large" />
                                  </styleClass>
                               </TextField>
-                                    </children>
-                                    <padding>
-                                        <Insets left="100.0" right="100.0" />
-                                    </padding>
-                                </VBox>
+                              <TextField fx:id="bandeAnonce" layoutX="118.0" layoutY="318.0" minHeight="50.0" prefHeight="61.0" prefWidth="359.0" promptText="Bande Anonce">
+                                 <styleClass>
+                                    <String fx:value="lead-contact" />
+                                    <String fx:value="action-clear" />
+                                    <String fx:value="input-large" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="duree" layoutX="118.0" layoutY="390.3999938964844" minHeight="50.0" prefHeight="50.0" prefWidth="362.0" promptText="Duree">
+                                 <styleClass>
+                                    <String fx:value="lead-contact" />
+                                    <String fx:value="action-clear" />
+                                    <String fx:value="input-large" />
+                                 </styleClass>
+                              </TextField>
+                           </children>
+                        </Pane>
                             </content>
                         </ScrollPane>
                     </children>

@@ -91,15 +91,15 @@
                                     <RowConstraints maxHeight="125.0" minHeight="1.0" prefHeight="124.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Button fx:id="registerBtn" defaultButton="true" layoutX="38.0" layoutY="318.0" mnemonicParsing="false" onAction="#openRegisterPage" prefWidth="121.0" styleClass="btn-flat" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <TextField fx:id="username" minHeight="50.0" prefHeight="40.0" prefWidth="371.0" promptText="Your Login" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                    <Button fx:id="registerBtn" defaultButton="true" layoutX="38.0" layoutY="318.0" mnemonicParsing="false" onAction="#openRegisterPage" prefWidth="121.0" styleClass="btn-flat" text="S'inscrire?" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <TextField fx:id="username" minHeight="50.0" prefHeight="40.0" prefWidth="371.0" promptText="Votre Email" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.valignment="TOP">
                                        <styleClass>
                                           <String fx:value="lead-contact" />
                                           <String fx:value="action-clear" />
                                           <String fx:value="input-large" />
                                        </styleClass>
                                     </TextField>
-                                    <PasswordField fx:id="password" minHeight="50.0" prefHeight="40.0" promptText="Your password" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                    <PasswordField fx:id="password" minHeight="50.0" prefHeight="40.0" promptText="Votre mot de passe" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" GridPane.valignment="TOP">
                                        <GridPane.margin>
                                           <Insets />
                                        </GridPane.margin>
@@ -110,16 +110,15 @@
                                           <String fx:value="input-large" />
                                        </styleClass>
                                     </PasswordField>
-                                    <Button fx:id="loginBtn" defaultButton="true" mnemonicParsing="false" onAction="#login" prefWidth="121.0" styleClass="btn-alternate" text="Login" GridPane.rowIndex="5" />
-                                    <Label fx:id="welcome" alignment="CENTER" prefHeight="38.0" prefWidth="533.0" style="-fx-font-weight: bold;" text="Login Page" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER">
+                                    <Button fx:id="loginBtn" defaultButton="true" mnemonicParsing="false" onAction="#login" prefWidth="121.0" styleClass="btn-alternate" text="Conexion" GridPane.rowIndex="5" />
+                                    <Label fx:id="welcome" alignment="CENTER" prefHeight="38.0" prefWidth="533.0" style="-fx-font-weight: bold;" text="Page de Login" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER">
                                        <styleClass>
                                           <String fx:value="h2" />
                                           <String fx:value="text-info" />
                                        </styleClass>
                                     </Label>
-                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="524.0" styleClass="h5" text="Welcome back, Please login in your account." GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
-                                    <CheckBox mnemonicParsing="false" text="Remenber " GridPane.rowIndex="4" />
-                                    <Hyperlink fx:id="forgotPasswordBtn" onAction="#openForgotPasswordPage" text="Forgot your password?" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="524.0" styleClass="h5" text="Bienvenue,veuillez vous connectez" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+                                    <Hyperlink fx:id="forgotPasswordBtn" onAction="#openForgotPasswordPage" text="Mot de passe oublie?" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                                  </children>
                               </GridPane>
                               <VBox alignment="BOTTOM_CENTER" prefHeight="19.0" prefWidth="554.0">

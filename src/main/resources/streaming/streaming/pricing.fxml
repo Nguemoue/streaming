@@ -39,7 +39,7 @@
                                     <String fx:value="h4" />
                                  </styleClass>
                               </Text>
-                              <Label text="Pricing plans for teams of all sizes" wrapText="true">
+                              <Label text="Abonnements" wrapText="true">
                                  <styleClass>
                                     <String fx:value="text-bold" />
                                     <String fx:value="h2" />
@@ -47,7 +47,7 @@
                               </Label>
                               <TextFlow textAlignment="CENTER">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-12" text="Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales." textAlignment="CENTER" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-12" text="Choisir un plan d'abonnements selon vos besoins" textAlignment="CENTER" />
                                  </children>
                               </TextFlow>
                               <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="132.0" spacing="2.0" style="-fx-background-color: -light-gray-2; -fx-background-radius: 20px;">
@@ -68,7 +68,7 @@
                            <children>
                               <VBox prefHeight="500.0" prefWidth="415.0" style="-fx-border-color: -light-gray-2; -fx-border-radius: 10px; -fx-border-width: 2px;">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="One usage">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Un usage">
                                        <styleClass>
                                           <String fx:value="h3" />
                                           <String fx:value="text-bold" />
@@ -76,19 +76,19 @@
                                     </Text>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="The essentials to provide your best work for clients." />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="Vous ne pouvez avoir qu'un seul profile" />
                                        </children>
                                        <VBox.margin>
                                           <Insets top="20.0" />
                                        </VBox.margin>
                                     </TextFlow>
                                     <TextFlow />
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanOne" style="-fx-border-color: -fx-accent; -fx-border-width: 1px; -fx-border-radius: 4px;" styleClass="btn-flat" text="Choose">
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanOne" style="-fx-border-color: -fx-accent; -fx-border-width: 1px; -fx-border-radius: 4px;" styleClass="btn-flat" text="CHoisir">
                                        <VBox.margin>
                                           <Insets top="40.0" />
                                        </VBox.margin>
                                     </Button>
-                                    <Label styleClass="h4" text="One Device">
+                                    <Label styleClass="h4" text="Un appareil">
                                        <VBox.margin>
                                           <Insets top="20.0" />
                                        </VBox.margin>
@@ -110,7 +110,7 @@
                               </VBox>
                               <VBox layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="415.0" style="-fx-border-color: -fx-accent; -fx-border-radius: 10px; -fx-border-width: 2px;">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Two Usage">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deux Usages">
                                        <styleClass>
                                           <String fx:value="h3" />
                                           <String fx:value="text-bold" />
@@ -118,7 +118,7 @@
                                     </Text>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="A plan that scales with your rapidly growing business." />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="Un plan pour se connecter a deux usage" />
                                        </children>
                                        <VBox.margin>
                                           <Insets top="20.0" />
@@ -126,15 +126,15 @@
                                     </TextFlow>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="/month" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="par mois" />
                                        </children>
                                     </TextFlow>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanTwo" text="Choose">
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanTwo" text="Choisir">
                                        <VBox.margin>
                                           <Insets top="40.0" />
                                        </VBox.margin>
                                     </Button>
-                                    <Label styleClass="h4" text="02 Devices">
+                                    <Label styleClass="h4" text="02 Appareils">
                                        <VBox.margin>
                                           <Insets top="20.0" />
                                        </VBox.margin>
@@ -146,7 +146,7 @@
                                           </Group>
                                        </graphic>
                                     </Label>
-                                    <Label layoutX="42.0" layoutY="230.0" styleClass="h4" text="Many Profiles">
+                                    <Label layoutX="42.0" layoutY="230.0" styleClass="h4" text="Plusieurs profiles">
                                        <graphic>
                                           <Group>
                                              <children>
@@ -168,7 +168,7 @@
                               </VBox>
                               <VBox layoutX="337.0" layoutY="10.0" prefHeight="500.0" prefWidth="415.0" style="-fx-border-color: -light-gray-2; -fx-border-radius: 10px; -fx-border-width: 2px;">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Four Usage">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="04 Usages">
                                        <styleClass>
                                           <String fx:value="h3" />
                                           <String fx:value="text-bold" />
@@ -176,18 +176,18 @@
                                     </Text>
                                     <TextFlow>
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="Dedicated support and infrastructure for your company." />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="Dediees a plusieurs profile et appareils" />
                                        </children>
                                        <VBox.margin>
                                           <Insets top="20.0" />
                                        </VBox.margin>
                                     </TextFlow>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanThree" style="-fx-border-color: -fx-accent; -fx-border-width: 1px; -fx-border-radius: 4px;" styleClass="btn-flat" text="Choose">
+                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectPlanThree" style="-fx-border-color: -fx-accent; -fx-border-width: 1px; -fx-border-radius: 4px;" styleClass="btn-flat" text="Choisir">
                                        <VBox.margin>
                                           <Insets top="40.0" />
                                        </VBox.margin>
                                     </Button>
-                                    <Label styleClass="h4" text="04 Devices">
+                                    <Label styleClass="h4" text="04 Appareils">
                                        <VBox.margin>
                                           <Insets top="20.0" />
                                        </VBox.margin>
@@ -199,7 +199,7 @@
                                           </Group>
                                        </graphic>
                                     </Label>
-                                    <Label layoutX="32.0" layoutY="238.0" styleClass="h4" text="Many Profiles">
+                                    <Label layoutX="32.0" layoutY="238.0" styleClass="h4" text="Plusieurs profiles">
                                        <graphic>
                                           <Group>
                                              <children>

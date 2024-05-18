@@ -15,10 +15,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import streaming.streaming.Film;
 import streaming.streaming.SceneManager;
+import streaming.streaming.services.FilmService;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Date;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -49,8 +51,6 @@ public class HomeController implements Initializable {
     @FXML
     public TableColumn<Film, Date> dateSortieColumn;
     @FXML
-    public TableColumn<Film, String> ActeurColumn;
-    @FXML
     public TableColumn<Film, String> bandeAnnounce;
     @FXML
     public TableColumn<Film, String> nomColumn;
@@ -65,6 +65,7 @@ public class HomeController implements Initializable {
 
         filmBtn.setStyle("-fx-background-color: #cfe;");
         loadDate();
+        this.refreshFilms();
     }
 
 
@@ -84,15 +85,21 @@ public class HomeController implements Initializable {
         }
     }
 
+    @FXML
+    private void refreshFilms(){
+        List<Film> filmList =  FilmService.listFilms();
+        for (Film film : filmList) {
+            tableFilm.getItems().add(film);
+        }
+    }
     private void loadDate() {
         idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nomColumn.setCellValueFactory(new PropertyValueFactory<>("nom"));
+        nomColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         descriptionColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
         ageMinColumn.setCellValueFactory(new PropertyValueFactory<>("ageMin"));
-        dureColumn.setCellValueFactory(new PropertyValueFactory<>("duree"));
-        dateSortieColumn.setCellValueFactory(new PropertyValueFactory<>("dateSortie"));
-        ActeurColumn.setCellValueFactory(new PropertyValueFactory<>("acteur"));
-        bandeAnnounce.setCellValueFactory(new PropertyValueFactory<>("bandeAnnounce"));
+        dureColumn.setCellValueFactory(new PropertyValueFactory<>("duration"));
+        dateSortieColumn.setCellValueFactory(new PropertyValueFactory<>("releaseYear"));
+        bandeAnnounce.setCellValueFactory(new PropertyValueFactory<>("trailer"));
 
     }
 

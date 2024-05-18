@@ -29,6 +29,7 @@ public class HomeApplication extends Application {
     public void start(Stage stage) throws IOException {
         //loading loader
         FXMLLoader fxmlLoader = new FXMLLoader(HomeApplication.class.getResource("app/Home.fxml"));
+//        FXMLLoader fxmlLoader = new FXMLLoader(HomeApplication.class.getResource("Login.fxml"));
         Parent root = fxmlLoader.load();
 
         try {

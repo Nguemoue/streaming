@@ -1,22 +1,38 @@
 package streaming.streaming;
 
 public class Film {
+    private int id;
+    private String name;
+    private String description;
+    private int ageMin;
+    private int duration;
+    private int releaseYear;
+    private String trailer;
 
-    public Film(String nom, String description, int ageMin, int duree, int anneSotrie, String bandeAnonce) {
-        this.nom = nom;
+    public Film(String name, String description, int ageMin, int duration, int releaseYear, String trailer) {
+        this.id=0;
+        this.name = name;
         this.description = description;
         this.ageMin = ageMin;
-        this.duree = duree;
-        this.anneSotrie = anneSotrie;
-        this.bandeAnonce = bandeAnonce;
+        this.duration = duration;
+        this.releaseYear = releaseYear;
+        this.trailer = trailer;
     }
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -35,35 +51,27 @@ public class Film {
         this.ageMin = ageMin;
     }
 
-    public int getDuree() {
-        return duree;
+    public int getDuration() {
+        return duration;
     }
 
-    public void setDuree(int duree) {
-        this.duree = duree;
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 
-    public int getAnneSotrie() {
-        return anneSotrie;
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
-    public void setAnneSotrie(int anneSotrie) {
-        this.anneSotrie = anneSotrie;
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
-    public String getBandeAnonce() {
-        return bandeAnonce;
+    public String getTrailer() {
+        return trailer;
     }
 
-    public void setBandeAnonce(String bandeAnonce) {
-        this.bandeAnonce = bandeAnonce;
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
     }
-
-    public String nom;
-    public String description;
-    public int ageMin;
-    public int duree;
-    public int anneSotrie;
-    public String bandeAnonce;
-
 }

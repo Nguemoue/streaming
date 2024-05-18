@@ -135,7 +135,7 @@
       </Pane>
       <VBox layoutX="14.0" layoutY="146.0" prefHeight="447.0" prefWidth="1268.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="146.0">
          <children>
-            <TableView fx:id="tableFilm" prefHeight="458.0" prefWidth="1268.0">
+            <TableView fx:id="tableFilm" prefHeight="444.0" prefWidth="1268.0">
               <columns>
                   <TableColumn fx:id="idColumn" prefWidth="150.0" text="#" />
                 <TableColumn fx:id="nomColumn" prefWidth="150.0" text="Nom" />
