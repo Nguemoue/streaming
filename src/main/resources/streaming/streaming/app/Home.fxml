@@ -135,18 +135,22 @@
       </Pane>
       <VBox layoutX="14.0" layoutY="146.0" prefHeight="447.0" prefWidth="1268.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="146.0">
          <children>
-            <TableView fx:id="tableFilm" prefHeight="444.0" prefWidth="1268.0">
-              <columns>
-                  <TableColumn fx:id="idColumn" prefWidth="150.0" text="#" />
-                <TableColumn fx:id="nomColumn" prefWidth="150.0" text="Nom" />
-                  <TableColumn fx:id="descriptionColumn" prefWidth="107.0" text="Description" />
-                  <TableColumn fx:id="ageMinColumn" prefWidth="167.0" text="Age requis" />
-                  <TableColumn fx:id="dureColumn" prefWidth="134.0" text="Duree" />
-                  <TableColumn fx:id="dateSortieColumn" prefWidth="151.0" text="Annees de sorties" />
-                  <TableColumn fx:id="ActeurColumn" prefWidth="94.0" text="Acteurs" />
-                  <TableColumn fx:id="bandeAnnounce" prefWidth="163.0" text="Bandes d'annonce" />
-              </columns>
-            </TableView>
+            <Pane>
+               <children>
+                  <TableView fx:id="tableFilm" prefHeight="444.0" prefWidth="1268.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="150.0" text="#" />
+                      <TableColumn fx:id="nomColumn" prefWidth="150.0" text="Nom" />
+                        <TableColumn fx:id="descriptionColumn" prefWidth="107.0" text="Description" />
+                        <TableColumn fx:id="ageMinColumn" prefWidth="167.0" text="Age requis" />
+                        <TableColumn fx:id="dureColumn" prefWidth="134.0" text="Duree" />
+                        <TableColumn fx:id="dateSortieColumn" prefWidth="151.0" text="Annees de sorties" />
+                        <TableColumn fx:id="bandeAnnounce" prefWidth="163.0" text="Bandes d'annonce" />
+                        <TableColumn fx:id="actionsColumn" prefWidth="235.199951171875" text="Actions" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
          </children></VBox>
    </children>
 </AnchorPane>

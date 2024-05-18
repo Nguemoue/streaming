@@ -52,6 +52,18 @@ create table profiles
     user_id int,
     constraint profiles_user_id_foreign foreign key (user_id) references users(id) on delete cascade
 );
+create table films
+(
+    id           int auto_increment
+        primary key,
+    name         varchar(255) not null,
+    description  text         null,
+    age_min      int          null,
+    duration     int          null,
+    release_year int          null,
+    trailer      varchar(255) null
+);
+
 /**
   * Inserting default data
 **/
