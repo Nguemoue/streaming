@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streaming.streaming.controllers.LoginController">
+    <stylesheets>
+        <URL value="@style/css/colors.css" />
+        <URL value="@style/css/skeleton.css" />
+        <URL value="@style/css/bootstrap.css" />
+        <URL value="@style/css/helpers.css" />
+        <URL value="@style/css/typographic.css" />
+      <URL value="@style/css/shapes.css" />
+        <!--        <URL value="@../drawer.css" />-->
+        <!--        <URL value="@../dash.css" />-->
+    </stylesheets>
+   <children>
+      <HBox prefHeight="546.0" prefWidth="1134.0">
+         <children>
+            <StackPane maxWidth="400.0" prefHeight="614.0" prefWidth="262.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="614.0" prefWidth="239.0" styleClass="img-back" StackPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="163.0" style="-fx-text-fill: white;" styleClass="h2" text="SpeedCut" textFill="WHITE" visible="false" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <VBox id="workground" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: -info;" />
+                  <VBox minWidth="262.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="547.0" prefWidth="247.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="492.0" prefWidth="186.0" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <TextFlow prefHeight="168.0" prefWidth="335.0" textAlignment="JUSTIFY">
+                                       <children>
+                                          <Text fill="WHITE" stroke="RED" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="This is a non-commercial application.&#10;Created for show how is a complex JavaFx application.&#10;&#10;" visible="false" wrappingWidth="337.6348571777344" />
+                                       </children>
+                                    </TextFlow>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <StackPane alignment="TOP_LEFT" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" rotate="40.0">
+                           <padding>
+                              <Insets top="130.0" />
+                           </padding>
+                        </Separator>
+                        <Separator halignment="RIGHT" prefWidth="200.0" rotate="-164.1" valignment="TOP">
+                           <padding>
+                              <Insets top="130.0" />
+                           </padding>
+                           <StackPane.margin>
+                              <Insets top="200.0" />
+                           </StackPane.margin>
+                        </Separator>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="10.0" prefHeight="614.0" prefWidth="573.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ScrollPane id="bodyLogin" fx:id="bodyLogin" fitToHeight="true" fitToWidth="true">
+                     <content>
+                        <VBox id="loginContent" fx:id="loginContent" alignment="CENTER" style="-fx-background-color: white;">
+                           <children>
+                              <GridPane fx:id="login_content" alignment="CENTER" maxHeight="400.0" maxWidth="400.0" prefHeight="416.0" prefWidth="354.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="89.0" minHeight="0.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="125.0" minHeight="1.0" prefHeight="124.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="registerBtn" defaultButton="true" layoutX="38.0" layoutY="318.0" mnemonicParsing="false" onAction="#openRegisterPage" prefWidth="121.0" styleClass="btn-flat" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <TextField fx:id="username" minHeight="50.0" prefHeight="40.0" prefWidth="371.0" promptText="Your Login" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                       <styleClass>
+                                          <String fx:value="lead-contact" />
+                                          <String fx:value="action-clear" />
+                                          <String fx:value="input-large" />
+                                       </styleClass>
+                                    </TextField>
+                                    <PasswordField fx:id="password" minHeight="50.0" prefHeight="40.0" promptText="Your password" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <styleClass>
+                                          <String fx:value="field-filled" />
+                                          <String fx:value="lead-lock" />
+                                          <String fx:value="pw-viewer" />
+                                          <String fx:value="input-large" />
+                                       </styleClass>
+                                    </PasswordField>
+                                    <Button fx:id="loginBtn" defaultButton="true" mnemonicParsing="false" onAction="#login" prefWidth="121.0" styleClass="btn-alternate" text="Login" GridPane.rowIndex="5" />
+                                    <Label fx:id="welcome" alignment="CENTER" prefHeight="38.0" prefWidth="533.0" style="-fx-font-weight: bold;" text="Login Page" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="h2" />
+                                          <String fx:value="text-info" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="18.0" prefWidth="524.0" styleClass="h5" text="Welcome back, Please login in your account." GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+                                    <CheckBox mnemonicParsing="false" text="Remenber " GridPane.rowIndex="4" />
+                                    <Hyperlink fx:id="forgotPasswordBtn" onAction="#openForgotPasswordPage" text="Forgot your password?" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="19.0" prefWidth="554.0">
+                                 <children>
+                                    <HBox alignment="CENTER" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="100.0" right="100.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

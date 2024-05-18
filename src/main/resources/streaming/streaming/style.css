@@ -1,0 +1,25 @@
+.head-background
+{
+    -fx-background-color: linear-gradient(to left,#795AF3 ,#3929E0);
+}
+
+.lead-contact {
+
+}
+
+.action-clear {
+}
+
+.input-large {
+}
+
+.btn-ripple {
+
+}
+
+.streamingBtn{
+    -fx-background-radius: 10px;
+    -fx-border-color: #4286f5;
+    -fx-color-label-visible: #fff;
+    -fx-background-color: #4286f5;
+}

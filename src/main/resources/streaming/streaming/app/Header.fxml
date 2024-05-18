@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="145.0" prefWidth="1062.0" styleClass="head-background" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <children>
+        <Label layoutX="14.0" layoutY="8.0" text="Streaming App" textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Button layoutX="1022.0" layoutY="8.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #473E98;" text="Logout" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="86.0" prefHeight="43.0" prefWidth="116.0" styleClass="btn" text="Watch List" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+        </Button>
+        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="132.0" layoutY="86.0" prefHeight="43.0" prefWidth="142.0" text="Download List" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+        </Button>
+        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="283.0" layoutY="86.0" prefHeight="43.0" prefWidth="131.0" text="Stared List" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+        </Button>
+        <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="36.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/projects.png" />
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="153.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/reliabilty.png" />
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="294.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+            <viewport>
+                <Rectangle2D />
+            </viewport>
+            <Image url="@images/projections.png" />
+        </ImageView>
+        <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" defaultButton="true" graphicTextGap="10.0" layoutX="777.0" layoutY="96.0" prefHeight="43.0" prefWidth="97.0" styleClass="streamingBtn" text="Films" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+            <effect>
+                <Glow />
+            </effect>
+            <cursor>
+
+            </cursor>
+        </Button>
+        <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="803.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/icons8_Workflow_64px.png" />
+        </ImageView>
+        <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" defaultButton="true" graphicTextGap="10.0" layoutX="885.0" layoutY="95.0" prefHeight="43.0" prefWidth="116.0" styleClass="streamingBtn" text="Series" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+            <effect>
+                <Glow />
+            </effect>
+            <cursor>
+            </cursor>
+        </Button>
+        <ButtonBar layoutX="676.0" layoutY="101.0">
+            <buttons>
+                <AnchorPane />
+            </buttons>
+        </ButtonBar>
+        <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" defaultButton="true" graphicTextGap="10.0" layoutX="1010.0" layoutY="95.0" prefHeight="43.0" prefWidth="172.0" styleClass="streamingBtn" text="Documentaires" textFill="#5b5858">
+            <font>
+                <Font size="13.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+            <effect>
+                <Glow />
+            </effect>
+            <cursor>
+
+            </cursor>
+        </Button>
+        <ButtonBar layoutX="819.0" layoutY="104.0" />
+        <Button alignment="BASELINE_LEFT" blendMode="SRC_ATOP" cancelButton="true" graphicTextGap="10.0" layoutX="783.0" layoutY="9.0" prefHeight="28.0" prefWidth="203.0" text="Abonements" textFill="#5b5858">
+            <font>
+                <Font name="Roboto Light" size="20.0" />
+            </font>
+            <padding>
+                <Insets left="50.0" />
+            </padding>
+            <effect>
+                <Glow />
+            </effect>
+        </Button>
+        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="795.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <viewport>
+                <Rectangle2D />
+            </viewport>
+            <Image url="@images/icons8_Share_64px.png" />
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="1028.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/agencies.png" />
+        </ImageView>
+        <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="909.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/icons8_US_Dollar_64px.png" />
+        </ImageView>
+    </children>
+</Pane>

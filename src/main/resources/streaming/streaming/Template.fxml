@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="623.0" prefWidth="1196.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streaming.streaming.controllers.TemplateController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <children>
+      <fx:include source="Header.fxml"/>
+      <fx:define>
+
+      </fx:define>
+      <VBox fx:id="contentArea" layoutX="14.0" layoutY="146.0" prefHeight="447.0" prefWidth="252.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="146.0" />
+   </children>
+</AnchorPane>
