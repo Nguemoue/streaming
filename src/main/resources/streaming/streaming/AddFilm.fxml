@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streaming.streaming.controllers.AddFilmController">
+    <stylesheets>
+        <URL value="@style/css/bootstrap.css" />
+        <!--        <URL value="@../drawer.css" />-->
+        <!--        <URL value="@../dash.css" />-->
+    </stylesheets>
+    <children>
+        <HBox prefHeight="546.0" prefWidth="1134.0">
+            <children>
+                <StackPane maxWidth="400.0" prefHeight="546.0" prefWidth="54.0" />
+                <StackPane layoutX="10.0" layoutY="10.0" prefHeight="614.0" prefWidth="573.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <ScrollPane id="bodyLogin" fitToHeight="true" fitToWidth="true">
+                            <content>
+                                <VBox id="loginContent" alignment="CENTER" style="-fx-background-color: white;">
+                                    <children>
+                              <Button mnemonicParsing="false" text="ajouter" />
+                              <Pane>
+                                 <children>
+                                               <TextField fx:id="emailField" layoutX="22.0" layoutY="14.0" minHeight="50.0" prefHeight="50.0" prefWidth="360.0" promptText="Nom">
+                                                   <styleClass>
+                                                       <String fx:value="lead-contact" />
+                                                       <String fx:value="action-clear" />
+                                                       <String fx:value="input-large" />
+                                                   </styleClass>
+                                               </TextField>
+                                               <TextField fx:id="ribField" accessibleRole="DATE_PICKER" layoutX="25.0" layoutY="73.0" minHeight="50.0" prefHeight="50.0" prefWidth="359.0" promptText="Description">
+                                                   <styleClass>
+                                                       <String fx:value="lead-contact" />
+                                                       <String fx:value="action-clear" />
+                                                       <String fx:value="input-large" />
+                                                   </styleClass>
+                                               </TextField>
+                                               <TextField fx:id="passwordField" layoutX="24.0" layoutY="129.0" minHeight="50.0" prefHeight="50.0" prefWidth="362.0" promptText="Age min">
+                                                   <styleClass>
+                                                       <String fx:value="lead-contact" />
+                                                       <String fx:value="action-clear" />
+                                                       <String fx:value="input-large" />
+                                                   </styleClass>
+                                               </TextField>
+                                               <DatePicker fx:id="birthDateField" editable="false" layoutX="203.0" layoutY="191.0" prefHeight="44.0" prefWidth="185.0" promptText="Duree" showWeekNumbers="true" />
+                                    <TextField fx:id="emailField1" layoutX="14.0" layoutY="188.0" minHeight="50.0" prefHeight="50.0" prefWidth="160.0" promptText="Anne sortie">
+                                       <styleClass>
+                                          <String fx:value="lead-contact" />
+                                          <String fx:value="action-clear" />
+                                          <String fx:value="input-large" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </Pane>
+                              <TextField fx:id="passwordField1" minHeight="50.0" prefHeight="154.0" prefWidth="878.0" promptText="Bande Anonce">
+                                 <styleClass>
+                                    <String fx:value="lead-contact" />
+                                    <String fx:value="action-clear" />
+                                    <String fx:value="input-large" />
+                                 </styleClass>
+                              </TextField>
+                                    </children>
+                                    <padding>
+                                        <Insets left="100.0" right="100.0" />
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </StackPane>
+            </children>
+        </HBox>
+    </children>
+</StackPane>
